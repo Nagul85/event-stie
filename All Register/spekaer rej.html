@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Register</title>
+    <link rel="stylesheet" href="css/speaker rej .css">
+</head>
+<body>
+    <div class="a1">
+        <div class="a2">
+            <div class="logo">
+                <h4 id="logo"><img src="img/Logo.svg" alt=""></h4>
+            </div>
+            <div class="container">
+                <form id="registrationForm">
+                    <div class="photo">
+                        <img src="img/Group 37.svg" alt="">
+                    </div>
+                
+                    <div class="form-group" id="FLname">
+                        <div><input type="text" id="firstName" name="firstName" required minlength="6" placeholder="First Name"></div>
+                        <div><input type="text" id="lastName" name="lastName" required minlength="6" placeholder="Last Name"></div>
+                        <span id="nameError" class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email address">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10}" placeholder="Phone Number">
+                        <span id="phoneNumberError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" required placeholder="Create New Password">
+                        <span id="passwordError" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Affiliation/Company/Organization">
+                        <span id="nameError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="dob" name="dob" required placeholder="Date of Birth">
+                        <span id="dobError" class="error"></span>
+                    </div>
+                    
+                    <div id="a5">
+                        <div>
+                            <input type="checkbox" id="agree" name="agree">
+                            <label for="agree" >I agree to <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <div id="a6"> <a href="#">Already a user?</a></div>
+                    </div>
+                    <div class="sign"><input type="submit" onclick="saveData()" value="Sign up"> </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script/spekaer.js"></script>
+</body>
+</html>
